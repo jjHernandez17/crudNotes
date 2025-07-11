@@ -1,0 +1,25 @@
+body {
+            background-color: #fff;
+        }
+
+        .register-container {
+            max-width: 900px;
+            margin: 5% auto;
+            padding: 2rem;
+        }
+
+        .form-control::placeholder {
+            color: #adb5bd;
+        }
+
+        .note-img {
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .form-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+        }

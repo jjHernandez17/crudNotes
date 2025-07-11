@@ -1,3 +1,32 @@
 {
-    
+  "users": [
+    {
+      "id": "1",
+      "name": "juan jose ",
+      "email": "juanjose@gmail.com",
+      "username": "juanjoh17",
+      "password": "juanjo123"
+    },
+    {
+      "nombre": "juan jose ",
+      "correo": "juanjose@gmail.com",
+      "usuario": "juancho2375",
+      "password": "wwadad",
+      "id": "WxdUYzy"
+    },
+    {
+      "nombre": "robinson",
+      "correo": "robinson@riwi.io",
+      "usuario": "robinRiwiNotes",
+      "password": "robin123",
+      "id": "xr4XJrv"
+    },
+    {
+      "nombre": "juan jose hernandez vargas",
+      "correo": "juanjohervar1708@gmail.com",
+      "usuario": "juanjoh17",
+      "password": "juanjo123",
+      "id": "1lW3z1n"
+    }
+  ]
 }

@@ -18,7 +18,8 @@ function register() {
             nombre: fullName,
             correo: email,
             usuario: username,
-            password: password
+            password: password,
+            notes : []
         })
     })
         .then(response => response.json())

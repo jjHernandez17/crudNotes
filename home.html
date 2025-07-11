@@ -11,7 +11,6 @@
 
 <body class="bg-light">
     <div class="container py-4">
-  
         <div class="header-bar">
             <h1>CrudNote</h1>
             <button id="signOut" class="btn btn-outline-dark">Sign Out</button>
@@ -35,15 +34,15 @@
 
 
         <h5 class="fw-semibold mb-3">My Notes</h5>
-        <div id="noteSaved"   class="row g-3 mb-4">
-           
+        <div class="row g-3 mb-4">
+
             <div class="modal " id="miModal">
                 <div class="modal-dialog modal-dialog-centered">
 
-                    <div class="modal-content">
+                    <div class="modal-content ">
                         <div class="modal-header">
                             <h5 class="modal-title" id="miModalLabel">Nueva Nota</h5>
-                            <button id="closeWindow" type="button" class="btn-close" ></button>
+                            <button id="btnCloseWindow" type="button" class="btn-close" ></button>
                         </div>
             
                         <div class="modal-body">
@@ -60,14 +59,17 @@
                             </form>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                            <button id="btnCancel" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
                             <button id="btnSaveNote" type="button" class="btn btn-primary">Guardar Nota</button>
                         </div>
+
             
                     </div>
                 </div>
             </div>
+            <div id="noteSaved" class="d-flex gap-3">
 
+            </div>
             
             <!-- <div class="col-md-3">
                 <div class="note-card">
@@ -117,7 +119,7 @@
             </div>
         </div>
 
-        <button type="button" class="new-note-btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#miModal" >
+        <button id="btnOpenAddNote" type="button" class="new-note-btn btn btn-primary"  data-bs-target="#miModal" >
             + New Note
         </button>
     </div>

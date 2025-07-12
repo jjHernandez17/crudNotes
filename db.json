@@ -5,8 +5,29 @@
       "correo": "juanjohervar1708@gmail.com",
       "usuario": "juanjoh12",
       "password": "juanjo123",
-      "notes": [],
-      "id": 1
+      "notes": [
+        {
+          "titulo": "boton eliminar",
+          "contenido": "hacer funcional el boton eliminar\n"
+        },
+        {
+          "titulo": "boton compartir",
+          "contenido": "hacer funcional el boton compartir"
+        },
+        {
+          "titulo": "perrita",
+          "contenido": "yfgy"
+        },
+        {
+          "titulo": "como se hace",
+          "contenido": "adadawdadwdw"
+        },
+        {
+          "titulo": "adwadad",
+          "contenido": "awdadadw"
+        }
+      ],
+      "id": "1"
     },
     {
       "nombre": "nestor",
@@ -27,7 +48,7 @@
           "contenido": "wadawadwdawdwaddawdadadaadadaadadwdwdwdadadadawwadawadwdawdwaddawdadadaadadaadadwdwdwdadadadawwadawadwdawdwaddawdadadaadadaadadwdwdwdadadadawwadawadwdawdwaddawdadadaadadaadadwdwdwdadadadawwadawadwdawdwaddawdadadaadadaadadwdwdwdadadadawwadawadwdawdwaddawdadadaadadaadadwdwdwdadadadawwadawadwdawdwaddawdadadaadadaadadwdwdwdadadadawwadawadwdawdwaddawdadadaadadaadadwdwdwdadadadawwadawadwdawdwaddawdadadaadadaadadwdwdwdadadadawwadawadwdawdwaddawdadadaadadaadadwdwdwdadadadaw"
         }
       ],
-      "id": 2
+      "id": "2"
     }
   ]
 }

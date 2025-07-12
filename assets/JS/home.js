@@ -2,21 +2,21 @@
 const btnSignOut = document.getElementById("signOut");
 
 const userLogued = JSON.parse(localStorage.getItem("usuarioLogueado"));
-userLogued.notes.forEach(u => {
+userLogued.notes.forEach((nota, index) => {
     document.getElementById("noteSaved").innerHTML += `<div class="col-md-3">
-                                                            <div class="d-flex flex-column note-card gap-2">
-                                                                <h6 class="fw-bold">${u.titulo}</h6>
-                                                                <p class="person-scroll text-muted small mb-2 text-break">${u.contenido}</p>
-                                                                <div class="d-flex justify-content-between mt-auto">
-                                                                    <button class="btn btn-outline-danger btn-sm w-45">
-                                                                        <i class="bi bi-trash"></i> Eliminar
-                                                                    </button>
-                                                                    <button class="btn btn-outline-success btn-sm w-45">
-                                                                        <i class="bi bi-share"></i> Compartir
-                                                                    </button>
-                                                                </div>
-                                                            </div>
-                                                        </div>`
+            <div class="d-flex flex-column note-card gap-2">
+                <h6 class="fw-bold">${nota.titulo}</h6>
+                <p class="person-scroll text-muted small mb-2 text-break">${nota.contenido}</p>
+                <div class="d-flex justify-content-between mt-auto">
+                    <button data-index ="${index}" class="btn btn-outline-danger btn-sm w-45">
+                        Eliminar
+                    </button>
+                    <button class="btn btn-outline-success btn-sm w-45">
+                        Compartir
+                    </button>
+                </div>
+            </div>
+        </div>`
 
 });
 
@@ -103,10 +103,8 @@ function saveNote() {
             console.error("Error al agregar nota:", error);
         });
 
-
-
-
     userLogued.notes.push(newNote);
+
     localStorage.setItem("usuarioLogueado", JSON.stringify(userLogued));
 
     closeWindow();
@@ -115,6 +113,9 @@ function saveNote() {
 }
 
 btnSaveNote.addEventListener('click', saveNote);
+
+const btnDeleteNote = document.getElementById("btnDeleteNote");
+
 
 
 

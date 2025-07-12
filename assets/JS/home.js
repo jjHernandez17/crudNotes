@@ -8,7 +8,7 @@ userLogued.notes.forEach((nota, index) => {
                 <h6 class="fw-bold">${nota.titulo}</h6>
                 <p class="person-scroll text-muted small mb-2 text-break">${nota.contenido}</p>
                 <div class="d-flex justify-content-between mt-auto">
-                    <button data-index ="${index}" class="btn btn-outline-danger btn-sm w-45">
+                    <button data-index ="${index}" class="btn-delete btn btn-outline-danger btn-sm w-45">
                         Eliminar
                     </button>
                     <button class="btn btn-outline-success btn-sm w-45">
@@ -108,14 +108,45 @@ function saveNote() {
     localStorage.setItem("usuarioLogueado", JSON.stringify(userLogued));
 
     closeWindow();
-
-
+    
 }
-
 btnSaveNote.addEventListener('click', saveNote);
 
 const btnDeleteNote = document.getElementById("btnDeleteNote");
 
+
+const usuarioLogueado = JSON.parse(localStorage.getItem("usuarioLogueado"));
+document.addEventListener("click", function (e) {
+
+    if (e.target.matches(".btn-delete")) {
+        
+        let verDelete = prompt("Seguro que quieres eliminar esta nota? (si/no)")
+    if (verDelete == "si") {
+
+        const index = parseInt(e.target.getAttribute("data-index"));
+        const usuarioLogueado = JSON.parse(localStorage.getItem("usuarioLogueado"));
+        const idUser = usuarioLogueado.id;
+        usuarioLogueado.notes.splice(index, 1);
+        fetch(`http://localhost:3000/users/${idUser}`, {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ notes: usuarioLogueado.notes })
+        })
+        .then(res => res.json())
+        .then(data => {
+            localStorage.setItem("usuarioLogueado", JSON.stringify(usuarioLogueado));
+            e.target.closest(".col-md-3").remove();
+        })
+        .catch(err => console.error("Error al eliminar nota:", err));
+    }
+    else {
+
+    }
+    }
+    }
+);
 
 
 

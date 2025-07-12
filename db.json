@@ -7,24 +7,12 @@
       "password": "juanjo123",
       "notes": [
         {
-          "titulo": "boton eliminar",
-          "contenido": "hacer funcional el boton eliminar\n"
-        },
-        {
-          "titulo": "boton compartir",
-          "contenido": "hacer funcional el boton compartir"
-        },
-        {
-          "titulo": "perrita",
-          "contenido": "yfgy"
-        },
-        {
-          "titulo": "como se hace",
-          "contenido": "adadawdadwdw"
-        },
-        {
           "titulo": "adwadad",
           "contenido": "awdadadw"
+        },
+        {
+          "titulo": "esta es otra",
+          "contenido": "dawdawd"
         }
       ],
       "id": "1"
@@ -34,20 +22,7 @@
       "correo": "nraulh78@gmail.com",
       "usuario": "nesticor",
       "password": "nestor123",
-      "notes": [
-        {
-          "titulo": "esta es otra",
-          "contenido": "wdwadawd"
-        },
-        {
-          "titulo": "hacer arroz",
-          "contenido": "wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww"
-        },
-        {
-          "titulo": "wad",
-          "contenido": "wadawadwdawdwaddawdadadaadadaadadwdwdwdadadadawwadawadwdawdwaddawdadadaadadaadadwdwdwdadadadawwadawadwdawdwaddawdadadaadadaadadwdwdwdadadadawwadawadwdawdwaddawdadadaadadaadadwdwdwdadadadawwadawadwdawdwaddawdadadaadadaadadwdwdwdadadadawwadawadwdawdwaddawdadadaadadaadadwdwdwdadadadawwadawadwdawdwaddawdadadaadadaadadwdwdwdadadadawwadawadwdawdwaddawdadadaadadaadadwdwdwdadadadawwadawadwdawdwaddawdadadaadadaadadwdwdwdadadadawwadawadwdawdwaddawdadadaadadaadadwdwdwdadadadaw"
-        }
-      ],
+      "notes": [],
       "id": "2"
     }
   ]

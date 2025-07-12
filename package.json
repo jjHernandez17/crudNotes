@@ -1,14 +1,4 @@
 {
-  "name": "crudnotes-main",
-  "version": "1.0.0",
-  "description": "INSTALAR JSON-SERVER DE MANERA LOCAL\r 1.\tDirigirse a la ruta en que se quiere instalar \r 2.\tInicializar un proyecto node.js(Eso si aun no se tiene un package.json)\r npm init -y\r 3.\tInstalar Json-server localmente\r npm install json-server --save-dev\r 4.\tEjecutar el json server con la instalación local\r npx json-server --watch db.json\r 5.\tEjecutar el jsonserver\r npm run json-server",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "json-server": "^1.0.0-beta.3"
   }
